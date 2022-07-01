@@ -32,7 +32,8 @@
                 },
                 easing: 'linear',
                 duration: 1000,
-                delay: anime.stagger(5)
+                delay: anime.stagger(5),
+                complete: translateBlock,
             })
         }
         translateBlock();
