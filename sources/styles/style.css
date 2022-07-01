@@ -1,0 +1,42 @@
+:root{
+    --red: #ff4444;
+    --yellow: #ffb920;
+    --blue: #297bf7;
+}
+
+*, *::after, *::before{
+    outline: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    overflow: hidden;
+}
+
+div{
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: showSquare 1.5s ease-out 1 forwards;
+    -webkit-animation: showSquare 1.5s ease-out 1 forwards;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+}
+
+@keyframes showSquare {
+    100%{
+        opacity: 1;
+    }
+}
